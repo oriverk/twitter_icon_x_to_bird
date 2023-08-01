@@ -24,6 +24,9 @@
       "js": [
         "change_x_to.js"
       ],
+      "css": [
+        "main.css"
+      ],
       "run_at": "document_start",
       "all_frames": false
     }
