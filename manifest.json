@@ -1,0 +1,22 @@
+{
+  "name":"twitter_icon_x_to_bird",
+  "description":"Let's change twitter icon from X to the bird!",
+  "icons": {
+    "16": "/icons/16.png",
+    "48": "/icons/48.png",
+    "128": "/icons/128.png"
+  },
+  "version":"2.0.3",
+  "manifest_version":3,
+  "permissions": [],
+
+  "host_permissions": ["https://twitter.com/*", "https://*.twitter.com/*", "https://x.com/*", "https://*.x.com/*"],
+  "content_scripts":[
+    {
+      "matches":["https://twitter.com/*", "https://*.twitter.com/*", "https://x.com/*", "https://*.x.com/*"],
+      "js":["twitter_icon_x_to_bird_2_0_3.js"],
+      "run_at": "document_start",
+      "all_frames":false
+    }
+  ]
+}
