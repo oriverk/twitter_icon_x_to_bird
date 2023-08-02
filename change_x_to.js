@@ -10,12 +10,6 @@ window.addEventListener('load', () => {
     if (!logo) return;
     logo.outerHTML = `<img src="${src}">`;
   });
-
-  // Splash Logo
-  // waitForSelector('#placeholder > svg').then((splash) => {
-  //   if (!splash) return;
-  //   splash.outerHTML = `<img src="${src}">`;
-  // });
 });
 
 function waitForSelector(selector) {
